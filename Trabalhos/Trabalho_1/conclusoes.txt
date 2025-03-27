@@ -1,0 +1,78 @@
+Relatório de Análise de Tamanho de Imagem e Threshold
+
+Vou estar utilizando o F1-score juntamente com a análise dos gráficos e AUC para avaliar o 
+melhor tamanho de imagem e threshold. Isso porque o F1-score representa o equilíbrio entre 
+a precisão e o recall. A precisão indica a proporção de predições corretas entre os 
+positivos preditos, enquanto o recall reflete a capacidade do modelo de identificar 
+corretamente todas as instâncias positivas.
+
+Como não queremos um modelo que apenas maximize a precisão ou apenas maximize o recall, 
+o F1-score se torna uma escolha natural. Um valor elevado de F1-score indica um bom 
+compromisso entre evitar falsos positivos e falsos negativos, o que é essencial para 
+garantir a qualidade da detecção. No entanto, se eu tenho uma precisão muito alta e um 
+recall muito baixo, isso pode resultar em um valor alto para o F1-score, mas que não
+reflete corretamente o equilíbrio entre Precisão e Recall. Por esse motivo, vou usar 
+os gráficos para complementar a análise e verificar se onde o valor de F1-score é alto as
+curvas de Precision-Recall estão se aproximando (indicando equilíbrio) ou se afastando.
+
+Além disso+
+
+---
+
+### Melhor Tamanho de Imagem e Threshold
+
+#### **Melhor Tamanho de Imagem:**
+- **Tamanho:** 512x512
+- **Melhor Threshold:** 0.50 e 0.55 (com base na análise do gráfico)
+- **Métricas:**
+  - **Precisão:** 0.8815
+  - **Recall:** 0.8782
+  - **F1-Score:** 0.8799
+  - **AUC:** 0.1593
+
+Embora o tamanho 800x800 tenha apresentado o maior F1-score, o tamanho 512x512 se destaca por apresentar a maior AUC e um F1-score competitivo. A AUC (Area Under the Precision-Recall Curve) indica a performance geral do modelo em diferentes thresholds, e seu valor mais alto sugere que o modelo tem um desempenho mais estável para diferentes valores de threshold.
+
+---
+
+### **Melhor Threshold para cada Tamanho de Imagem**
+
+#### **Tamanho 512x512:**
+- **Threshold:** 0.50 e 0.55
+- **Precisão:** 0.8815
+- **Recall:** 0.8782
+- **F1-Score:** 0.8799
+- **AUC:** 0.1593
+
+Para o tamanho 512x512, tanto a tabela de F1-score quanto o gráfico confirmam que os melhores thresholds são 0.50 e 0.55, pois é onde as curvas de precisão e recall mais se aproximam, indicando um melhor equilíbrio entre esses dois fatores.
+
+#### **Tamanho 608x608:**
+- **Threshold pela tabela:** 0.15
+- **Threshold pelo gráfico:** 0.60
+- **Precisão:** 0.8378
+- **Recall:** 0.9151
+- **F1-Score (0.15):** 0.8748
+- **F1-Score (0.60):** 0.8656
+- **AUC:** 0.1386
+
+Apesar do maior F1-score estar no threshold 0.15 segundo a tabela, o gráfico sugere que o melhor threshold é 0.60, pois é onde as curvas de precisão e recall mais se aproximam. Como o objetivo é encontrar um ponto de equilíbrio entre precisão e recall, o threshold de 0.60 pode ser uma escolha mais confiável para evitar desequilíbrios extremos.
+
+#### **Tamanho 800x800:**
+- **Threshold pela tabela:** 0.75
+- **Threshold pelo gráfico:** 0.65
+- **Precisão:** 0.8977
+- **Recall:** 0.8745
+- **F1-Score (0.75):** 0.8860
+- **F1-Score (0.65):** 0.8840
+- **AUC:** 0.1476
+
+No caso do tamanho 800x800, a tabela aponta que o melhor threshold é 0.75, pois é onde o maior F1-score ocorre. No entanto, o gráfico indica que o ponto onde as curvas se aproximam mais é em 0.65, onde o F1-score é apenas ligeiramente menor (0.8840). Isso sugere que 0.65 pode ser um threshold mais equilibrado.
+
+---
+
+### **Conclusões**
+A análise dos dados mostrou que escolher o melhor tamanho de imagem e threshold depende do critério utilizado. Se basearmos a escolha no F1-score isoladamente, o tamanho 800x800 seria a melhor opção. No entanto, ao considerar também a AUC e a consistência dos thresholds entre a tabela e o gráfico, o tamanho 512x512 se mostra uma opção mais confiável.
+
+O threshold ideal também pode variar dependendo do critério escolhido. Em casos onde há discrepâncias entre os valores da tabela e do gráfico, é preferível confiar no ponto onde as curvas de precisão e recall se aproximam mais, pois isso indica um maior equilíbrio entre os dois fatores.
+
+Portanto, com base nessa análise, recomenda-se o tamanho 512x512 com um threshold entre 0.50 e 0.55 como a melhor configuração para maximizar o desempenho do modelo.
+
