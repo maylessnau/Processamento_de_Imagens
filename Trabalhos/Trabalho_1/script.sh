@@ -66,10 +66,10 @@ pip3 show pandas &>/dev/null || pip3 install --user pandas
 pip3 show matplotlib &>/dev/null || pip3 install --user matplotlib
 pip3 show scikit-learn &>/dev/null || pip3 install --user scikit-learn
 
-# roda o código que gera os gráficos e calcula AUC pros arquivos gerados
+# roda o código que gera os gráficos e calcula AP pros arquivos gerados
 for arquivo in *.csv
 do
-    python3 plot_e_AUC.py "$arquivo"
+    python3 plot_e_AP.py "$arquivo"
 done
 
 # mostra os gráficos
