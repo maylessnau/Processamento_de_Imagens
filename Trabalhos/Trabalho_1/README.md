@@ -6,13 +6,40 @@ Resultados da análise poderão ser encontrados no arquivo "Relatorio.md". Pode 
 
 ### **Passo 1: Preparação do Ambiente**
 
-Vamos precisar de três bibliotecas instaladas:
+Para rodar o script, você precisará de um ambiente Python com as seguintes bibliotecas instaladas:
 
 - **pandas**
 - **matplotlib**
 - **scikit-learn**
 
-O script irá (ou tentará) verificar automaticamente se essas bibliotecas estão instaladas e, se necessário, as instalará (em modo --user).
+Caso não queira ou não consiga instalar, poderá criar um ambiente virtual.
+
+### **Criar o Ambiente Virtual (opcional, mas recomendado)**
+
+Caso ainda não tenha um ambiente virtual, você pode criar um para isolar as dependências do projeto. Para isso, siga as instruções abaixo:
+
+1. Criação do ambiente virtual:
+
+No terminal, navegue até o diretório do projeto e execute:
+
+```bash
+python3 -m venv venv
+```
+
+2. Ativação do ambiente virtual:
+
+Se você estiver usando Linux, execute:
+
+```bash
+source venv/bin/activate
+```
+3. Instalar as Bibliotecas
+
+Com o ambiente virtual ativado, instale as bibliotecas necessárias:
+
+```bash
+pip install pandas matplotlib scikit-learn
+```
 
 ### **Passo 2: Estrutura de Arquivos**
 
@@ -38,6 +65,9 @@ Após garantir que o script é executável, basta rodá-lo com o seguinte comand
 ```bash
 ./seu_script.sh
 ```
+
+**Importante**: Sempre execute o script dentro do ambiente virtual que você criou, caso tenha sido necessário. Para garantir que o script use as bibliotecas instaladas no venv, verifique se a venv está ativada antes de rodar o script.
+
 ## **O que Acontece ao Executar**
 
 ### **Extração e Cálculo das Métricas:**
