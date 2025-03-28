@@ -63,11 +63,6 @@ done
 
 mkdir -p Graficos
 
-# garante que tem todas as libs pro código em python
-pip3 show pandas &>/dev/null || pip3 install --user pandas
-pip3 show matplotlib &>/dev/null || pip3 install --user matplotlib
-pip3 show scikit-learn &>/dev/null || pip3 install --user scikit-learn
-
 # roda o código que gera os gráficos e calcula AP pros arquivos gerados
 for arquivo in *.csv
 do
