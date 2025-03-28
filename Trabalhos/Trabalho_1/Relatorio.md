@@ -26,7 +26,7 @@ Portanto, a imagem **800x800** é a melhor escolha, pois oferece o maior **F1-sc
 
 ### Melhor Threshold para 800x800
 
-O melhor **threshold** para a imagem de tamanho **800x800** é **0.75**, pois apresenta o maior **F1-score** (0.8860), indicando um ótimo equilíbrio entre precisão (0.8977) e recall (0.8745). Esse valor garante que quase 90% das previsões positivas estão corretas, ao mesmo tempo em que mantém uma boa taxa de detecção dos verdadeiros positivos. Acima desse threshold, a precisão continua aumentando, mas o recall cai significativamente, reduzindo o **F1-score**. Por outro lado, valores menores favorecem o recall, mas aumentam os falsos positivos.
+O melhor **threshold** para a imagem de tamanho **800x800** é **0.75**, pois apresenta o maior **F1-score** (0.8860), indicando um ótimo equilíbrio entre precisão (0.8977) e recall (0.8745). Esse valor garante que quase 90% das previsões positivas estão corretas, ao mesmo tempo em que mantém uma boa taxa de detecção dos verdadeiros positivos. Acima desse threshold, a precisão continua aumentando, mas o recall cai significativamente, reduzindo o **F1-score**. Por outro lado, valores menores favorecem o recall, mas aumentam os falsos positivos. Tudo isso também é possível enxergar no gráfico, observando o ponto onde os valores de Precisão (0.8977) e Recall (0.8745) batem com os valores da tabela onde o threshold é 0.75.
 
 ### Conclusão Final
 

@@ -61,6 +61,8 @@ for arquivo in Modelos/*.txt; do
 
 done
 
+mkdir -p Graficos
+
 # garante que tem todas as libs pro código em python
 pip3 show pandas &>/dev/null || pip3 install --user pandas
 pip3 show matplotlib &>/dev/null || pip3 install --user matplotlib
@@ -73,7 +75,7 @@ do
 done
 
 # mostra os gráficos
-for arquivo in *.png; do
+for arquivo in Graficos/*.png; do
     xdg-open "$arquivo" &
 done
 

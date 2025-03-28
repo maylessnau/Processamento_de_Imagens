@@ -1,5 +1,7 @@
 # **README: Análise de Métricas de Modelos**
 
+Resultados da análise poderão ser encontrados no arquivo "Relatorio.md". Pode abrir com editor de texto mesmo ou acessar meu github (só pra ficar mais apresentável): https://github.com/maylessnau/Processamento_de_Imagens/tree/03b0d97daa44dded977c2bc76b686ed35592efd1/Trabalhos/Trabalho_1 
+
 ## **Como Utilizar**
 
 ### **Passo 1: Preparação do Ambiente**

@@ -49,8 +49,8 @@ def plot_precision_recall(csv_file):
     plt.legend()
     plt.grid()
 
-    # salva arquivo com o gráfico
-    output_file = f"precision_recall_{tamanho}.png"
+    # salva as imagens no diretório Graficos
+    output_file = f"Graficos/precision_recall_{tamanho}.png"
     plt.savefig(output_file)
 
     # imprime os dados do arquivo .csv 
