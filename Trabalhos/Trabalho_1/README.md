@@ -40,15 +40,7 @@ Com o ambiente virtual ativado, instale as bibliotecas necessárias:
 ```bash
 pip install pandas matplotlib scikit-learn
 ```
-
-### **Passo 2: Estrutura de Arquivos**
-
-O script espera que você tenha um arquivo comprimido `Modelos.tar` que contenha arquivos de texto com as métricas dos modelos no mesmo diretório.
-
-1. **Modelos.tar**: Arquivo comprimido contendo os arquivos de métricas (ex: `512.txt`, `608.txt`, `800.txt`).
-2. O script criará um diretório chamado **Modelos** para descompactar os arquivos, mas não se preocupa que no fim de tudo ele exclui.
-
-### **Passo 3: Tornando o Script Executável**
+### **Passo 2: Tornando o Script Executável**
 
 Para executar o script, você precisa primeiro garantir que ele seja executável. No terminal, navegue até o diretório onde o script está localizado e execute o seguinte comando:
 
@@ -58,7 +50,7 @@ chmod +x script.sh
 
 Isso dará permissão de execução ao script.
 
-### **Passo 4: Execução do Script**
+### **Passo 3: Execução do Script**
 
 Após garantir que o script é executável, basta rodá-lo com o seguinte comando:
 
