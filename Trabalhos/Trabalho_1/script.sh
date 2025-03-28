@@ -63,16 +63,31 @@ done
 
 mkdir -p Graficos
 
-# roda o código que gera os gráficos e calcula AP pros arquivos gerados
+# criar ambiente virtual (se não existir)
+if [ ! -d "venv" ]; then
+    python3 -m venv venv
+fi
+
+# ativar ambiente virtual
+source venv/bin/activate
+
+# garantir que todas as bibliotecas necessárias estão instaladas
+pip install --upgrade pip > /dev/null 2>&1
+pip install pandas matplotlib scikit-learn > /dev/null 2>&1
+
+# rodar o Python no ambiente virtual
 for arquivo in *.csv
 do
     python3 plot_e_AP.py "$arquivo"
 done
 
-# mostra os gráficos
+# mostrar os gráficos
 for arquivo in Graficos/*.png; do
     xdg-open "$arquivo" &
 done
+
+# desativar o ambiente virtual
+deactivate
 
 # exclui arquivos gerados
 rm -f *.csv
