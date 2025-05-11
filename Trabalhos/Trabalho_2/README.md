@@ -2,6 +2,8 @@
 
 Este projeto implementa um classificador simples para imagens médicas da base **SIIM Small**, utilizando 4 métodos de comparação disponíveis no OpenCV. O objetivo é avaliar a capacidade dos métodos em distinguir entre imagens com e sem Pneumotórax.
 
+Link do GitHub: https://github.com/maylessnau/Processamento_de_Imagens/tree/main/Trabalhos/Trabalho_2
+
 ## 📦 Arquivos incluídos
 
 - `trabalho_introducao.ipynb` – Notebook com todo o código fonte do projeto.
