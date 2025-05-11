@@ -1,0 +1,34 @@
+===== CORREL =====
+
+Matriz de confusão:
+[[8 7]
+ [7 8]]
+Sensibilidade: 0.53
+Especificidade: 0.53
+
+
+===== CHISQR =====
+
+Matriz de confusão:
+[[9 6]
+ [9 6]]
+Sensibilidade: 0.60
+Especificidade: 0.40
+
+
+===== INTERSECT =====
+
+Matriz de confusão:
+[[ 5 10]
+ [ 7  8]]
+Sensibilidade: 0.33
+Especificidade: 0.53
+
+
+===== BHATTACHARYYA =====
+
+Matriz de confusão:
+[[6 9]
+ [9 6]]
+Sensibilidade: 0.40
+Especificidade: 0.40
