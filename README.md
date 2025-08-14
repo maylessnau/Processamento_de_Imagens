@@ -1,14 +1,14 @@
 
-# 🧠 Processamento de Imagens - UFPR
+# Processamento de Imagens Biomédicas - UFPR
 
-Este repositório contém atividades, notebooks e códigos desenvolvidos durante a disciplina de **Processamento de Imagens**, no curso de Informática Biomédica da UFPR.
+Este repositório contém atividades, notebooks e códigos desenvolvidos durante a disciplina de **Processamento de Imagens Biomédicas**, no 5º período do curso de Informática Biomédica da UFPR (Professor - Lucas Ferrari de Oliveira).
 
-## 📚 Conteúdo
+## Conteúdo
 
 - `Trabalho_1`: O objetivo deste trabalho foi analisar as saídas de uma rede neural (Yolov4) que detecta células em imagens biológicas, utilizando três tamanhos diferentes de imagens: 512x512, 608x608 e 800x800. Para isso, três arquivos de resultados foram fornecidos, contendo informações sobre as métricas de desempenho da rede para diversos thresholds de confiança. 
 - `Trabalho_2`: Implementação de um classificador simples usando métodos de Implementação de um classificador simples usando métodos de comparação do OpenCV para detecção de Pneumotórax em imagens da base **SIIM Small**.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python 3
 - Google Colab
@@ -18,6 +18,6 @@ Este repositório contém atividades, notebooks e códigos desenvolvidos durante
 - Scikit Learn
 - Pydicom
 
-## ✍️ Autoria
+## Autoria
 
 Este repositório foi desenvolvido por **Mayara**, estudante de Informática Biomédica da UFPR, como parte das atividades da disciplina de Processamento de Imagens.
